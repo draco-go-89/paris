@@ -3,9 +3,10 @@
     {
       "name": "Default",
       "files": [
-        "songs/brooklynbaby.mp3",
         "script.js",
-        ".vscode/changelists.json"
+        ".vscode/changelists.json",
+        "songs/lovemenot.mp3",
+        "songs/sawurface.mp3"
       ]
     }
   ],

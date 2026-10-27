@@ -4,9 +4,7 @@
       "name": "Default",
       "files": [
         "script.js",
-        ".vscode/changelists.json",
-        "songs/lovemenot.mp3",
-        "songs/sawurface.mp3"
+        ".vscode/changelists.json"
       ]
     }
   ],

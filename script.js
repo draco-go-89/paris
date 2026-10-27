@@ -48,7 +48,7 @@ function loadSong(index) {
 
 function playSong() {
     audio.play();
-    playBtn.innerHTML = "⏸";
+    playBtn.innerHTML = "||";
     isPlaying = true;
 }
 

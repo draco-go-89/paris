@@ -9,6 +9,8 @@ const volume = document.getElementById("volume");
 
 
 const songs = [
+    { name: "Paris", artist: "The Chainsmokers", src: "songs/paris.mp3" },
+    { name: "About You", artist: "The 1975", src: "songs/aboutyou.mp3" },
     { name: "August", artist: "Taylor Swift", src: "songs/august.mp3" },
     { name: "Daisies", artist: "Justin Bieber", src: "songs/daises.mp3" },
     { name: "Dil Diya Gallan", artist: "Atif Aslam", src: "songs/dildiya.mp3" },
@@ -18,8 +20,17 @@ const songs = [
     { name: "Paaro", artist: "Aditya Rikhari", src: "songs/paaro.mp3" },
     { name: "Swngkhwmabai", artist: "NJUP BGLRY, Alphinstone Boro", src: "songs/swngkhwmabai.mp3" },
     { name: "Every Breath You Take", artist: "The Police", src: "songs/thekids.mp3" },
-    { name: "Whats Up", artist: "4 Non Blondes", src: "songs/whatsup.mp3" }
-    // { name: "", artist: "", src: "songs/.mp3" },
+    { name: "Whats Up", artist: "4 Non Blondes", src: "songs/whatsup.mp3" },
+    { name: "Ishq Tera", artist: "Guru Randhawa", src: "songs/ishqtera.mp3" },
+    { name: "Just a Dream", artist: "Nelly", src: "songs/justadream.mp3" },
+    { name: "Made In Japan", artist: "Buck Owens", src: "songs/madeinjapan.mp3" },
+    { name: "My Person", artist: "Spencer Crandall", src: "songs/myperson.mp3" },
+    { name: "Run", artist: "Joji", src: "songs/run.mp3" },
+    { name: "Slut", artist: "Taylor Swift", src: "songs/slut.mp3" },
+    { name: "Country Road Take Me Home", artist: "John Denver", src: "songs/takemehome.mp3" },
+    { name: "Waiting 4 U", artist: "Nwjwr", src: "songs/waiting4u.mp3" },
+    { name: "Walking Away", artist: "Justin Bieber", src: "songs/walkingaway.mp3" },
+    { name: "Sunflower", artist: "Swae Lee", src: "songs/sunflower.mp3" }
     // { name: "", artist: "", src: "songs/.mp3" }
 ];
 

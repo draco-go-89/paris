@@ -16,6 +16,7 @@ const songs = [
     { name: "Dil Diya Gallan", artist: "Atif Aslam", src: "songs/dildiya.mp3" },
     { name: "Jiyaa", artist: "Darshan Raval", src: "songs/jiyaa.mp3" },
     { name: "In Ankhon Ki Masthi Ki", artist: "Shreya Ghoshal", src: "songs/masthiki.mp3" },
+    { name: "Brooklyn Baby", artist: "Lana Del Rey", src: "songs/brooklynbaby.mp3" },
     { name: "Mugdho Hiya Mur", artist: "Zubeen Garg", src: "songs/mugdho.mp3" },
     { name: "Paaro", artist: "Aditya Rikhari", src: "songs/paaro.mp3" },
     { name: "Swngkhwmabai", artist: "NJUP BGLRY, Alphinstone Boro", src: "songs/swngkhwmabai.mp3" },

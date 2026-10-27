@@ -1,0 +1,103 @@
+const audio = document.getElementById("audio");
+const title = document.getElementById("title");
+const artist = document.getElementById("artist");
+const playBtn = document.getElementById("play");
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
+const progress = document.getElementById("progress");
+const volume = document.getElementById("volume");
+
+
+const songs = [
+    { name: "August", artist: "Taylor Swift", src: "songs/august.mp3" },
+    { name: "Daisies", artist: "Justin Bieber", src: "songs/daises.mp3" },
+    { name: "Dil Diya Gallan", artist: "Atif Aslam", src: "songs/dildiya.mp3" },
+    { name: "Jiyaa", artist: "Darshan Raval", src: "songs/jiyaa.mp3" },
+    { name: "In Ankhon Ki Masthi Ki", artist: "Shreya Ghoshal", src: "songs/masthiki.mp3" },
+    { name: "Mugdho Hiya Mur", artist: "Zubeen Garg", src: "songs/mugdho.mp3" },
+    { name: "Paaro", artist: "Aditya Rikhari", src: "songs/paaro.mp3" },
+    { name: "Swngkhwmabai", artist: "NJUP BGLRY, Alphinstone Boro", src: "songs/swngkhwmabai.mp3" },
+    { name: "Every Breath You Take", artist: "The Police", src: "songs/thekids.mp3" },
+    { name: "Whats Up", artist: "4 Non Blondes", src: "songs/whatsup.mp3" }
+    // { name: "", artist: "", src: "songs/.mp3" },
+    // { name: "", artist: "", src: "songs/.mp3" }
+];
+
+let songIndex = 0;
+let isPlaying = false;
+
+function loadSong(index) {
+    title.textContent = songs[index].name;
+    artist.textContent = songs[index].artist;
+    audio.src = songs[index].src;
+}
+
+function playSong() {
+    audio.play();
+    playBtn.innerHTML = "⏸";
+    isPlaying = true;
+}
+
+function pauseSong() {
+    audio.pause();
+    playBtn.innerHTML = "▶";
+    isPlaying = false;
+}
+
+function nextSong() {
+    songIndex = (songIndex + 1) % songs.length;
+    loadSong(songIndex);
+    playSong();
+}
+
+function prevSong() {
+    songIndex = (songIndex - 1 + songs.length) % songs.length;  // play previous even when the song is at the first index
+    loadSong(songIndex);
+    playSong();
+}
+
+playBtn.addEventListener("click", () => {
+    isPlaying ? pauseSong() : playSong();
+});
+
+nextBtn.addEventListener("click", nextSong);
+prevBtn.addEventListener("click", prevSong);
+
+audio.addEventListener("timeupdate", () => {
+    if (audio.duration) {
+        progress.value =
+            (audio.currentTime / audio.duration) * 100;
+    }
+});
+
+progress.addEventListener("input", () => {
+    audio.currentTime = (progress.value / 100) * audio.duration;
+});
+
+volume.addEventListener("input", () => {
+    audio.volume = volume.value;
+});
+
+audio.addEventListener("ended", nextSong);
+
+loadSong(songIndex);
+
+// SCRIPT FOR TIME UPDATE
+const current = document.getElementById("current");
+const duration = document.getElementById("duration");
+
+audio.addEventListener("timeupdate", () => {
+    const curMin = Math.floor(audio.currentTime / 60);
+    const curSec = Math.floor(audio.currentTime % 60);
+
+    current.textContent =
+        `${curMin}:${String(curSec).padStart(2, "0")}`;
+});
+
+audio.addEventListener("loadedmetadata", () => {
+    const durMin = Math.floor(audio.duration / 60);
+    const durSec = Math.floor(audio.duration % 60);
+
+    duration.textContent =
+        `${durMin}:${String(durSec).padStart(2, "0")}`;
+});

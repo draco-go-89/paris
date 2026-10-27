@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#volume {
+    display: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100dvh;
+    overflow: hidden;
+    background-image: url(images/paris.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.player {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(9px);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.controls button {
+    width: 36px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+
+    color: #000000c9;
+    font-size: 15px;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.105);
+    transition: all .2s ease;
+}
+
+.controls button:hover {
+    transform: scale(1.01);
+    background: rgba(255, 255, 255, .4);
+}
+
+.controls button:active {
+    transform: scale(.95);
+}
+
+/* Play button slightly bigger */
+#play {
+    width: 44px;
+    height: 44px;
+    font-size: 19px;
+    background: rgba(255, 255, 255, .45);
+}
+
+.progress {
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0);
+}
+
+#progress {
+    width: 100%;
+    height: 6px;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Track */
+#progress::-webkit-slider-runnable-track {
+    height: 5px;
+    border-radius: 10px;
+}
+
+/* Thumb */
+#progress::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 1px;
+    /* height: 12px; */
+    /* border-radius: 50%; */
+
+    background: #ffffff;
+    /* border: 2px solid #ff5100; */
+
+    margin-top: -3.5px;
+
+    box-shadow: -200px 0 0 200px #fcc453;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 5px;
+    color: black;
+}

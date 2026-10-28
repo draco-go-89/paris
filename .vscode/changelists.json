@@ -3,9 +3,11 @@
     {
       "name": "Default",
       "files": [
-        "script.js",
+        "style.css",
         ".vscode/changelists.json",
-        "songs/afterparty.mp3"
+        "images/parisgirl.jpg",
+        "images/boy&girl.jpg",
+        "script.js"
       ]
     }
   ],

@@ -3,10 +3,8 @@
     {
       "name": "Default",
       "files": [
-        "style.css",
         ".vscode/changelists.json",
-        "images/parisgirl.jpg",
-        "images/boy&girl.jpg",
+        "style.css",
         "script.js"
       ]
     }

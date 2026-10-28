@@ -24,8 +24,8 @@ body {
 .player {
     font-family: Arial, sans-serif;
     font-size: 14px;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(9px);
+    background: rgba(255, 255, 255, 0.136);
+    backdrop-filter: blur(5px);
     padding: 30px;
     border-radius: 20px;
     text-align: center;
@@ -47,13 +47,13 @@ body {
     border-radius: 50%;
     cursor: pointer;
 
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(8px);
 
     color: #000000c9;
     font-size: 15px;
 
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.105);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     transition: all .2s ease;
 }
 
@@ -71,7 +71,7 @@ body {
     width: 44px;
     height: 44px;
     font-size: 19px;
-    background: rgba(255, 255, 255, .45);
+    background: rgba(255, 255, 255, 0.118);
 }
 
 .progress {
@@ -110,7 +110,7 @@ body {
 
     margin-top: -3.5px;
 
-    box-shadow: -200px 0 0 200px #424242;
+    box-shadow: -200px 0 0 200px #f1b40aae;
 }
 
 .time {

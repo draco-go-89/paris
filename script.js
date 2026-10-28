@@ -9,6 +9,7 @@ const volume = document.getElementById("volume");
 
 
 const songs = [
+    { name: "About You", artist: "The 1975", src: "songs/aboutyou.mp3" },
     { name: "Every Breath You Take", artist: "The Police", src: "songs/thekids.mp3" },
     { name: "After Party", artist: "The Weeknd", src: "songs/afterparty.mp3" },
     { name: "Daisies", artist: "Justin Bieber", src: "songs/daises.mp3" },
@@ -23,7 +24,6 @@ const songs = [
     { name: "Paris", artist: "The Chainsmokers", src: "songs/paris.mp3" },
     { name: "Dil Diya Gallan", artist: "Atif Aslam", src: "songs/dildiya.mp3" },
     { name: "Made In Japan", artist: "Buck Owens", src: "songs/madeinjapan.mp3" },
-    { name: "About You", artist: "The 1975", src: "songs/aboutyou.mp3" },
     { name: "Country Road Take Me Home", artist: "John Denver", src: "songs/takemehome.mp3" }
 
 ];

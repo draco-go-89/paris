@@ -15,6 +15,7 @@ const songs = [
     { name: "I Thought I Saw Your Face Today", artist: "She & Him", src: "songs/sawurface.mp3" },
     { name: "August", artist: "Taylor Swift", src: "songs/august.mp3" },
     { name: "Daisies", artist: "Justin Bieber", src: "songs/daises.mp3" },
+    { name: "After Party", artist: "The Weeknd", src: "songs/afterparty.mp3" },
     { name: "Dil Diya Gallan", artist: "Atif Aslam", src: "songs/dildiya.mp3" },
     { name: "Jiyaa", artist: "Darshan Raval", src: "songs/jiyaa.mp3" },
     // { name: "In Ankhon Ki Masthi Ki", artist: "Shreya Ghoshal", src: "songs/masthiki.mp3" },

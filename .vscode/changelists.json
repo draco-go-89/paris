@@ -3,8 +3,9 @@
     {
       "name": "Default",
       "files": [
-        "index.html",
-        ".vscode/changelists.json"
+        "script.js",
+        ".vscode/changelists.json",
+        "songs/afterparty.mp3"
       ]
     }
   ],

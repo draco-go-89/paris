@@ -166,7 +166,7 @@
     <script>
         // Set your maintenance schedule using local time.
         const maintenanceStart = new Date("2026-10-29T21:00:00");
-        const maintenanceEnd = new Date("2026-10-31T09:00:00");
+        const maintenanceEnd = new Date("2026-11-03T09:00:00");
 
         const now = new Date();
         const statusText = document.getElementById("statusText");
@@ -183,7 +183,7 @@
         } else if (now < maintenanceEnd) {
             statusText.textContent = "Development in progress";
             footerText.textContent =
-                "Availability: 01 Nov " +
+                "Availability: 03 Nov " +
                 maintenanceEnd.toLocaleTimeString([], {
                     hour: "2-digit",
                     minute: "2-digit"
